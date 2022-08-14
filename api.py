@@ -12,7 +12,6 @@ class RankerItem(BaseModel):
 
 @app.post('/')
 async def scoring_endpoint(item:RankerItem):
-    return item
     context = ranker(text=item.text, sentence_lim=item.sentence_limit)
 
     

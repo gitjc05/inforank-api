@@ -27,7 +27,6 @@ numpy==1.23.2
 packaging==21.3
 pandas==1.4.3
 pathy==0.6.2
-pickle-mixin==1.0.2
 Pillow==9.2.0
 preshed==3.0.6
 pydantic==1.9.2
@@ -42,6 +41,7 @@ six==1.16.0
 smart-open==5.2.1
 sniffio==1.2.0
 spacy==3.4.1
+https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.4.0/en_core_web_sm-3.4.0.tar.gz#egg=en_core_web_sm
 spacy-legacy==3.0.9
 spacy-loggers==1.0.3
 srsly==2.4.4

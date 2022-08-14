@@ -1,8 +1,10 @@
-import pickle
+import spacy
+import pytextrank
 
 def ranker(text, sentence_lim):
-    with open('model_pickle.pkl', 'rb') as f:
-        nlp = pickle.load(f)
+    
+    nlp = spacy.load("en_core_web_sm")
+    nlp.add_pip('textrank')
     
     sent_lim = int(sentence_lim)
 

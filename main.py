@@ -2,9 +2,9 @@ import spacy
 import pytextrank
 
 def ranker(text, sentence_lim):
-    
+
     nlp = spacy.load("en_core_web_sm")
-    nlp.add_pip('textrank')
+    nlp.add_pipe('textrank')
     
     sent_lim = int(sentence_lim)
 
